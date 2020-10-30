@@ -1,5 +1,0 @@
-materials:
-  - name: Name of the material
-    stockroom: https://url-to-material-product
-    quantity: 1
-    notes: Bla bla

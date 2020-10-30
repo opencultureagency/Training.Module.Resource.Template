@@ -1,5 +1,0 @@
-tools:
-  - name: Name of the tool
-    stockroom: https://url-to-tool-prodct
-    quantity: 1
-    notes: Blu blu

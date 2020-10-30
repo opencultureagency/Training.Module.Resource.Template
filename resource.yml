@@ -21,3 +21,13 @@ resource:
 #        name: # generate name from repo
 #        file: # generate file link from repo. If there is no file in root then link to repo.
 #    manual: manual.md # if the manual file has the manual.md filename it could be generated
+    materials:
+      - name: Name of the material
+        stockroom: https://url-to-material-product
+        quantity: 1
+        notes: Bla bla
+    tools:
+      - name: Name of the tool
+        stockroom: https://url-to-tool-prodct
+        quantity: 1
+        notes: Blu blu
