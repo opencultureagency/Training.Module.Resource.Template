@@ -1,23 +1,23 @@
-  version: '1.0'
+version: '1.0'
 
-training-module-content:
+resource:
     authors:
         - name: Name of the author
-          github-profile: 
-          contact: 
-    release: 1.0
-    categories:
+          github-profile: werwe
+          mail: rwewer
+    release: v.1.0
+    categories: [A, B]
     duration: HH:MM
-    difficulty:
-    cost:
+    difficulty: high
+    cost: 99 Eur
     language: en
     connected-platforms:
-        - blog:
-        - telegram:
-        - wikifab: 
-        - other:
-    new-issue: # generate url to new issue
-    license:
-        name: # generate name from repo
-        file: # generate file link from repo. If there is no file in root then link to repo.
-    manual: Manual.md # if the manual file has the manual.md filename it could be generated
+        - blog: https://url-to-blog-post
+        - telegram: https://url-to-telegram-group
+        - wikifab: https://url-to-wikifab-project
+        - other: https://url-to-github-project
+#    new-issue: <generate url to new issue when creating the RDF>
+#    license:
+#        name: # generate name from repo
+#        file: # generate file link from repo. If there is no file in root then link to repo.
+#    manual: manual.md # if the manual file has the manual.md filename it could be generated

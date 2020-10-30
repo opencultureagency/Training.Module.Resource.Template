@@ -1,5 +1,5 @@
 tools:
-  - name: Name of the product
-    stockroom: https://url-to-product
+  - name: Name of the tool
+    stockroom: https://url-to-tool-prodct
     quantity: 1
-    notes: 
+    notes: Blu blu
