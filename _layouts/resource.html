@@ -1,0 +1,21 @@
+---
+layout: default
+rdf_prefix_path: _data/Prefixes.pref
+---
+
+<div class="resource">
+  <i>name:</i> {{page.rdf | rdf_property: "rdfs:label"}}<br/>
+  <i>manual:</i> {{page.rdf | rdf_property: "ask:manual"}}<br/>
+
+  {% assign authors = page.rdf | rdf_property: "ask:author", nil, true %}
+  <div class="authors">
+  <h3>authors</h3>
+  {% for author in authors %}
+  <p>
+      <h5>{{author | rdf_property: "rdfs:label"}}</h5>
+      <i>name:</i> {{author | rdf_property: "rdfs:label"}}<br/>
+      <i>eMail:</i> {{author | rdf_property: "schema:mbox"}}<br/>
+  </p>
+  {% endfor %}
+  </div>
+</div>

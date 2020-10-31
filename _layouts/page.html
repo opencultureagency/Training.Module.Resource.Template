@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<p><a href="{{ site.repo_browse_url }}/blob/{{ site.git_ref }}/{{ page.path }}">Page source (dynamic, with Liquid, EDITABLE)</a></p>
+<p><a href="{{ site.repo_raw_url }}/{{ site.git_ref }}/{{ page.path }}">Page source (dynamic, with Liquid, raw)</a></p>
+<p><a href="{{ site.url }}/{{ site.baseurl }}/{{ page.path }}.txt">Page source (static/rendered)</a></p>
+
+<h1>{{ page.title }}</h1>
+
+{{ content }}

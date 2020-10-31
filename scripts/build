@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Copyright (C) 2020, Robin Vobruba <hoijui.quaero@gmail.com>
+# Licensed under the GPL v3, see LICENSE-GPLv3.md.
+#
+# Runs jekyll *build* (or *serve*).
+
+# Exit immediately on each error and unset variable;
+# see: https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+#set -Eeuo pipefail
+set -Eeu
+
+script_dir=$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")
+
+# NOTE $action should be "build" or "serve"
+action="${1:-build}"
+
+"$script_dir/pre-process"
+
+# CD to project root
+cd "$script_dir/.."
+
+bundle exec jekyll "$action"
