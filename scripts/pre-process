@@ -37,7 +37,7 @@ do
 	if [ -f "./$part.yml" ]
 	then
 		# Copy meta-data file to jekylls data folder
-		cp "_data/$part.yml" ./
+		cp "$part.yml" "./_data/"
 		# Generate the RDF from the YAML
 		"$script_dir/yaml2rdf" \
 			"_data/$part.yml" \
