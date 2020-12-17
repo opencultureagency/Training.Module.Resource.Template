@@ -33,7 +33,7 @@ git_ref: "main"
 #github_username:  jekyll
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: jekyll-theme-cayman-blog
 show_downloads: false
 plugins:
     - jekyll-rdf
