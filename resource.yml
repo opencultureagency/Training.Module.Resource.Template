@@ -10,8 +10,8 @@ resource:
     name: MyBigFatTrainingModuleResource
     authors:
         - name: Name of the author
-          email: miname@email.com
-          github-user: werwe
+          github-profile: werwe
+          mail: rwewer
     release: v.1.0
     categories: [A, B]
     duration: HH:MM
