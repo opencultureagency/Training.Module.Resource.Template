@@ -16,6 +16,7 @@ jobs:
         scripts/pre-process
         # Copy the data files into the folder to publish
         mkdir -p build
+        rm -Rf build/*
         for part in training module resource
         do
           [ -f "${part}.ttl" ] && cp "${part}.ttl" build/
