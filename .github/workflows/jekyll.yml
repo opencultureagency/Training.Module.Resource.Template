@@ -14,6 +14,12 @@ jobs:
     - run: |
         pip install -r requirements.txt
         scripts/pre-process
+        # Copy the data files into the folder to publish
+        mkdir -p build
+        for part in training module resource
+        do
+          [ -f "${part}.ttl" ] && cp "${part}.ttl" build/
+        done
         pwd
         find
 
@@ -29,6 +35,3 @@ jobs:
     - uses:  helaili/jekyll-action@2.0.4
       env:
         JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
-    - run: |
-        pwd
-        find
