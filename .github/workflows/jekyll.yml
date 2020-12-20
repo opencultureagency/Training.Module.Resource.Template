@@ -14,6 +14,8 @@ jobs:
     - run: |
         pip install -r requirements.txt
         scripts/pre-process
+        pwd
+        find
 
     # Use GitHub Actions' cache to shorten build times and decrease load on servers
     - uses: actions/cache@v1
@@ -27,3 +29,6 @@ jobs:
     - uses:  helaili/jekyll-action@2.0.4
       env:
         JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+    - run: |
+        pwd
+        find
