@@ -65,7 +65,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - docker-compose.yml
-  - ressources.yml
   - requirements.txt
   - .gitignore
   - node_modules/
