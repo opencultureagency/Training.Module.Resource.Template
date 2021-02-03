@@ -8,12 +8,13 @@ on:
 
 jobs:
   jekyll:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
     - run: |
-        pip install -r requirements.txt
-        scripts/pre-process
+        git clone https://github.com/ASKtraining/tools.git
+        pip3 install -r tools/requirements.txt
+        tools/scripts/pre-process
 
     # Use GitHub Actions' cache to shorten build times and decrease load on servers
     - uses: actions/cache@v1
