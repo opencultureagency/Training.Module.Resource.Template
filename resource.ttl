@@ -1,0 +1,42 @@
+@prefix ask: <http://myontology.com/> .
+@prefix aska: <http://myontology.com/authors/> .
+@prefix askc: <http://myontology.com/materials/> .
+@prefix askr: <http://myontology.com/resources/> .
+@prefix askt: <http://myontology.com/tools/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+askr:MyBigFatTrainingModuleResource a ask:Resource ;
+    rdfs:label "MyBigFatTrainingModuleResource"^^xsd:string ;
+    ask:author aska:Name_of_the_author ;
+    ask:blog "https://url-to-blog-post"^^xsd:string ;
+    ask:cost "99 Eur"^^schema:MonetaryAmount ;
+    ask:difficulty "high"^^xsd:string ;
+    ask:manual "manual.md"^^xsd:string ;
+    ask:other "https://url-to-github-project"^^xsd:string ;
+    ask:release "v.1.0"^^xsd:string ;
+    askr:material askc:Name_of_the_material ;
+    askr:tool askt:Name_of_the_tool ;
+    ask:telegram "https://url-to-telegram-group"^^xsd:string ;
+    ask:wikifab "https://url-to-wikifab-project"^^xsd:string ;
+    schema:duration "HH:MM"^^schema:Duration ;
+    schema:inLanguage "en"^^xsd:string .
+
+aska:Name_of_the_author a ask:Author ;
+    schema:email "rwewer"^^xsd:string ;
+    schema:github "werwe"^^schema:URL ;
+    schema:name "Name of the author"^^xsd:string .
+
+askc:Name_of_the_material a ask:Material ;
+    rdfs:label "Name of the material"^^xsd:string ;
+    schema:location "https://url-to-material-product"^^xsd:string ;
+    schema:notes "Bla bla"^^xsd:int ;
+    schema:quantity "1"^^xsd:int .
+
+askt:Name_of_the_tool a ask:Tool ;
+    rdfs:label "Name of the tool"^^xsd:string ;
+    schema:notes "Blu blu"^^xsd:int ;
+    schema:quantity "1"^^xsd:int ;
+    schema:stockroom "https://url-to-tool-prodct"^^xsd:string .
+

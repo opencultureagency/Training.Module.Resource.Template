@@ -1,0 +1,40 @@
+# This is a meta-data file for a training module resource,
+# as described here:
+# https://github.com/opencultureagency/Training.Module.Resource.Template/blob/main/README.md
+# The whole Training system is described here:
+# https://github.com/opencultureagency/Training.Template/blob/main/README.md
+
+version: '0.1.0'
+
+resource:
+    name: MyBigFatTrainingModuleResource
+    authors:
+        - name: Name of the author
+          github-user: werwe
+          email: rwewer
+    release: v.1.0
+    categories: [A, B]
+    duration: HH:MM
+    difficulty: high
+    cost: 99 Eur
+    language: en
+    connected-platforms:
+        - blog: https://url-to-blog-post
+        - telegram: https://url-to-telegram-group
+        - wikifab: https://url-to-wikifab-project
+        - other: https://url-to-github-project
+#    new-issue: <generate url to new issue when creating the RDF>
+#    license:
+#        name: # generate name from repo
+#        file: # generate file link from repo. If there is no file in root then link to repo.
+#    manual: manual.md # if the manual file has the manual.md filename it could be generated
+    materials:
+      - name: Name of the material
+        stockroom: https://url-to-material-product
+        quantity: 1
+        notes: Bla bla
+    tools:
+      - name: Name of the tool
+        stockroom: https://url-to-tool-prodct
+        quantity: 1
+        notes: Blu blu

@@ -1,0 +1,5 @@
+The [(ASKotec) training module resource meta-data file (resource.yml)](
+https://github.com/Training.Module.Resource.Template/Training.Module.Resource.Template//blob/main/resource.yml)
+is also visualized in [a human friendly form](resources/MyBigFatTrainingModuleResource.html),
+and as RDF/Turtle in [resource.ttl](resource.ttl).
+
