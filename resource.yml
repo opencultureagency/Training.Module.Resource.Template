@@ -1,6 +1,6 @@
 # This is a meta-data file for a training module resource,
 # as described here:
-# https://github.com/opencultureagency/Training.Module.Resource.Template/blob/main/README.md
+# https://github.com/ASKtraining/Resource-TEMPLATE/blob/main/README.md
 # The whole Training system is described here:
 # https://github.com/opencultureagency/Training.Template/blob/main/README.md
 
@@ -11,7 +11,7 @@ resource:
     authors:
         - name: Name of the author
           github-user: werwe
-          email: rwewer
+          email: rwewer@bla.com
     release: v.1.0
     categories: [A, B]
     duration: HH:MM
